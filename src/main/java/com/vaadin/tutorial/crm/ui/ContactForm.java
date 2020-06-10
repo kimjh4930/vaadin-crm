@@ -52,6 +52,10 @@ public class ContactForm extends FormLayout {
         );
     }
 
+    public void setContact (Contact contact){
+        binder.setBean(contact);
+    }
+
     private Component createButtonsLayout() {
         save.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         delete.addThemeVariants(ButtonVariant.LUMO_ERROR);
